@@ -1,0 +1,130 @@
+// src/assets/food.js
+export const foodPlaces = {
+  dhalai: [
+    {
+      id: 1,
+      name: "Ambassa Restaurant",
+      heroImage: "/src/assets/food1.jpg",
+      helpline: "1800-111-222",
+      description: "Famous for traditional Bengali thali.",
+      address: "Ambassa Main Road, Dhalai",
+      direction: "https://maps.google.com/?q=Ambassa+Restaurant+Dhalai",
+      featureImages: ["/src/assets/food1.jpg", "/src/assets/food2.jpg"],
+      openingHours: "10:00 AM - 9:00 PM",
+      category: "Bengali Cuisine",
+      rating: 4.6,
+    },
+  ],
+
+  gomati: [
+    {
+      id: 1,
+      name: "Udaipur Bhojanalay",
+      heroImage: "/src/assets/food3.jpg",
+      helpline: "1800-333-444",
+      description: "Popular place for sweets & snacks.",
+      address: "Udaipur Market, Gomati",
+      direction: "https://maps.google.com/?q=Udaipur+Bhojanalay",
+      featureImages: ["/src/assets/food3.jpg", "/src/assets/food4.jpg"],
+      openingHours: "9:00 AM - 8:00 PM",
+      category: "Snacks & Sweets",
+      rating: 4.5,
+    },
+  ],
+
+  southTripura: [
+    {
+      id: 1,
+      name: "Belonia Food Court",
+      heroImage: "/src/assets/food5.jpg",
+      helpline: "1800-555-666",
+      description: "Famous for fast food and snacks.",
+      address: "Belonia Main Road, South Tripura",
+      direction: "https://maps.google.com/?q=Belonia+Food+Court",
+      featureImages: ["/src/assets/food5.jpg", "/src/assets/food6.jpg"],
+      openingHours: "10:00 AM - 9:00 PM",
+      category: "Fast Food",
+      rating: 4.4,
+    },
+  ],
+
+  northTripura: [
+    {
+      id: 1,
+      name: "Dharmanagar Sweets",
+      heroImage: "/src/assets/food7.jpg",
+      helpline: "1800-666-777",
+      description: "Famous for traditional sweets and snacks.",
+      address: "Dharmanagar Town, North Tripura",
+      direction: "https://maps.google.com/?q=Dharmanagar+Sweets",
+      featureImages: ["/src/assets/food7.jpg", "/src/assets/food8.jpg"],
+      openingHours: "9:00 AM - 9:00 PM",
+      category: "Sweets & Snacks",
+      rating: 4.5,
+    },
+  ],
+
+  westTripura: [
+    {
+      id: 1,
+      name: "Agartala Food Plaza",
+      heroImage: "/src/assets/food9.jpg",
+      helpline: "1800-777-888",
+      description: "Multi-cuisine restaurant with local flavors.",
+      address: "Agartala City, West Tripura",
+      direction: "https://maps.google.com/?q=Agartala+Food+Plaza",
+      featureImages: ["/src/assets/food9.jpg", "/src/assets/food10.jpg"],
+      openingHours: "10:00 AM - 10:00 PM",
+      category: "Multi-cuisine",
+      rating: 4.6,
+    },
+  ],
+
+  khowai: [
+    {
+      id: 1,
+      name: "Khowai Tandoor",
+      heroImage: "/src/assets/food11.jpg",
+      helpline: "1800-888-999",
+      description: "Famous for tandoori dishes and snacks.",
+      address: "Khowai Town, Khowai",
+      direction: "https://maps.google.com/?q=Khowai+Tandoor",
+      featureImages: ["/src/assets/food11.jpg", "/src/assets/food12.jpg"],
+      openingHours: "10:00 AM - 9:00 PM",
+      category: "North Indian",
+      rating: 4.5,
+    },
+  ],
+
+  unakoti: [
+    {
+      id: 1,
+      name: "Kailashahar Bhojanalay",
+      heroImage: "/src/assets/food13.jpg",
+      helpline: "1800-999-111",
+      description: "Traditional Tripuri dishes and snacks.",
+      address: "Kailashahar Town, Unakoti",
+      direction: "https://maps.google.com/?q=Kailashahar+Bhojanalay",
+      featureImages: ["/src/assets/food13.jpg", "/src/assets/food14.jpg"],
+      openingHours: "9:00 AM - 8:00 PM",
+      category: "Traditional Cuisine",
+      rating: 4.5,
+    },
+  ],
+
+  sepahijala: [
+    {
+      id: 1,
+      name: "Bishalgarh Food Hub",
+      heroImage: "/src/assets/food15.jpg",
+      helpline: "1800-111-333",
+      description: "Local snacks and beverages.",
+      address: "Bishalgarh Town, Sepahijala",
+      direction: "https://maps.google.com/?q=Bishalgarh+Food+Hub",
+      featureImages: ["/src/assets/food15.jpg", "/src/assets/food16.jpg"],
+      openingHours: "10:00 AM - 9:00 PM",
+      category: "Snacks & Beverages",
+      rating: 4.4,
+    },
+  ],
+};

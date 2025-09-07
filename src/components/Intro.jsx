@@ -62,31 +62,31 @@ export default function Intro({ onFinish }) {
         </motion.p>
 
         {/* Bengali Chant */}
-        <motion.div
-          className="mt-8 max-w-1xl text-xl md:text-sm italic text-red-900 font-semibold leading-relaxed text-center bg-white/70 rounded-2xl p-4 shadow-md"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 2.2, duration: 1.2 }}
-        >
-          <p>
-            <br />
-            যা দেবী সর্বভূতেষু মাতৃরূপেণ সংস্থিতা।<br />
-            নমস্তস্যৈ নমস্তস্যৈ নমস্তস্যৈ নমো নমঃ॥ <br /><br />
+        {/* Bengali Chant */}
+<motion.div
+  className="mt-8 w-full max-w-md md:max-w-2xl text-center bg-white/70 rounded-2xl p-4 shadow-md"
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ delay: 2.2, duration: 1.2 }}
+>
+  <p className="text-xs sm:text-sm md:text-lg text-red-900 font-semibold leading-relaxed italic tracking-wide">
+    যা দেবী সর্বভূতেষু মাতৃরূপেণ সংস্থিতা।<br />
+    নমস্তস্যৈ নমস্তস্যৈ নমস্তস্যৈ নমো নমঃ॥ <br /><br />
 
-            যা দেবী সর্বভূতেষু শক্তিরূপেণ সংস্থিতা।<br />
-            নমস্তস্যৈ নমস্তস্যৈ নমস্তস্যৈ নমো নমঃ॥ <br /><br />
+    যা দেবী সর্বভূতেষু শক্তিরূপেণ সংস্থিতা।<br />
+    নমস্তস্যৈ নমস্তস্যৈ নমস্তস্যৈ নমো নমঃ॥ <br /><br />
 
-            যা দেবী সর্বভূতেষু বুদ্ধিরূপেণ সংস্থিতা।<br />
-            নমস্তস্যৈ নমস্তস্যৈ নমস্তস্যৈ নমো নমঃ॥ <br /><br />
+    যা দেবী সর্বভূতেষু বুদ্ধিরূপেণ সংস্থিতা।<br />
+    নমস্তস্যৈ নমস্তস্যৈ নমস্তস্যৈ নমো নমঃ॥ <br /><br />
 
-            যা দেবী সর্বভূতেষু লজ্জারূপেণ সংস্থিতা।<br />
-            নমস্তস্যৈ নমস্তস্যৈ নমস্তস্যৈ নমো নমঃ॥ <br /><br />
+    যা দেবী সর্বভূতেষু লজ্জারূপেণ সংস্থিতা।<br />
+    নমস্তস্যৈ নমস্তস্যৈ নমস্তস্যৈ নমো নমঃ॥ <br /><br />
 
-            যা দেবী সর্বভূতেষু শান্তিরূপেণ সংস্থিতা।<br />
-            নমস্তস্যৈ নমস্তস্যৈ নমস্তস্যৈ নমো নমঃ॥ <br />
-            
-          </p>
-        </motion.div>
+    যা দেবী সর্বভূতেষু শান্তিরূপেণ সংস্থিতা।<br />
+    নমস্তস্যৈ নমস্তস্যৈ নমস্তস্যৈ নমো নমঃ॥ <br />
+  </p>
+</motion.div>
+
       </motion.div>
     </div>
   );

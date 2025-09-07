@@ -3,6 +3,10 @@ import { motion } from "framer-motion";
 import Background from "../assets/Background.png";
 import Logo from "../assets/Logo-removebg.png";
 import React from "react";
+import AdImage1 from "../assets/banner/elc.jpeg";
+import AdImage2 from "../assets/banner/joy1.jpeg";
+import AdImage3 from "../assets/banner/joy2.jpeg";
+import Banner from "../assets/Payment_banner.png";
 
 export default function HomePage() {
   return (
@@ -30,57 +34,186 @@ export default function HomePage() {
           Tripura Durga Puja 2025
         </motion.h1>
         <p className="relative z-10 mt-4 text-lg md:text-xl text-center max-w-2xl">
-          Celebrate the spirit, devotion, and joy of Durga Puja in Tripura.
-          For those who can’t be here, we bring the festival to your screen.
+          Experience the devotion, culture, and celebration of Tripura’s grand Durga Puja.
+          🌸 Bringing the festival to your screen 🌸
         </p>
+        {/* CTA */}
+        {/* <motion.a
+          href="#collab"
+          className="relative z-10 mt-6 px-6 py-3 bg-red-600 text-white rounded-full shadow-lg hover:bg-red-700 transition"
+          whileHover={{ scale: 1.05 }}
+        >
+          Partner With Us
+        </motion.a> */}
       </div>
 
-      {/* About Section */}
-      <section className="py-16 px-6 md:px-20 bg-white text-center">
-        <h2 className="text-3xl font-bold mb-4">Why Durga Puja Matters</h2>
-        <p className="text-lg max-w-3xl mx-auto leading-relaxed">
-          Durga Puja in Tripura is not just a festival, it is an emotion.
-          It connects families, unites communities, and brings divine energy
-          to every corner of the state. From majestic pandals to soulful prayers,
-          the celebration reflects the heritage and devotion of our land.
-        </p>
+      {/* Ad Space - Banner */}
+      {/* <section className="py-6 px-6 md:px-20 bg-gray-100 text-center">
+        <div className="bg-white border rounded-lg shadow-md py-10">
+          <h2 className="text-xl font-bold mb-2">🌟 Advertisement Space</h2>
+          <p className="text-gray-600">Your brand here. Reach thousands during Durga Puja.</p>
+        </div>
+      </section> */}
+
+      <section className="py-6 px-6 md:px-20 bg-gray-100 text-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {/* Ad 1 */}
+          <div className="group bg-white border rounded-lg shadow-md p-4 flex flex-col items-center transform transition-transform duration-300 hover:scale-105">
+            <img
+              src={AdImage1}
+              alt="Advertisement 1"
+              className="max-w-full max-h-[400px] object-contain rounded-lg shadow-md mb-2"
+            />
+          </div>
+
+          {/* Ad 2 */}
+          <div className="group bg-white border rounded-lg shadow-md p-4 flex flex-col items-center transform transition-transform duration-300 hover:scale-105">
+            <img
+              src={AdImage2}
+              alt="Advertisement 2"
+              className="max-w-full max-h-[400px] object-contain rounded-lg shadow-md mb-2"
+            />
+          </div>
+
+          {/* Ad 3 */}
+          <div className="group bg-white border rounded-lg shadow-md p-4 flex flex-col items-center transform transition-transform duration-300 hover:scale-105">
+            <img
+              src={AdImage3}
+              alt="Advertisement 3"
+              className="max-w-full max-h-[400px] object-contain rounded-lg shadow-md mb-2"
+            />
+          </div>
+        </div>
       </section>
+
+
+
 
       {/* Listings Section */}
       <section className="py-16 px-6 md:px-20 bg-gray-50">
         <h2 className="text-3xl font-bold text-center mb-10">
           Explore the Festivities
         </h2>
-        <div className="grid md:grid-cols-3 gap-8">
-          <div className="bg-white shadow-lg rounded-2xl p-6">
-            <h3 className="text-xl font-semibold mb-2">Pandal Listings</h3>
-            <p>
-              See the creativity of Tripura’s pandals and route your visit.
-              Even if you can’t attend in person, experience them online.
-            </p>
-          </div>
-          <div className="bg-white shadow-lg rounded-2xl p-6">
-            <h3 className="text-xl font-semibold mb-2">Food Places</h3>
-            <p>
-              Discover the best food stalls and restaurants near puja pandals.
-              From street food to traditional feasts, taste the essence of Puja.
-            </p>
-          </div>
-          <div className="bg-white shadow-lg rounded-2xl p-6">
-            <h3 className="text-xl font-semibold mb-2">Pre-Puja Shopping</h3>
-            <p>
-              Get ready for Puja with listings of boutiques, shops, and markets.
-              From sarees to handicrafts, shop what makes your Puja special.
-            </p>
-          </div>
+<div className="grid md:grid-cols-3 gap-8">
+  <div className="bg-white shadow-lg rounded-2xl p-6 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-blue-50">
+    <h3 className="text-xl font-semibold mb-2">Pandal Listings</h3>
+    <p>
+      Discover Tripura’s most creative pandals with live updates & routes.
+      Can't attend? Experience them online.
+    </p>
+  </div>
+
+  <div className="bg-white shadow-lg rounded-2xl p-6 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-green-50">
+    <h3 className="text-xl font-semibold mb-2">Food Places</h3>
+    <p>
+      Explore the best food stalls, street bites & festive feasts.
+      Taste the true flavor of Puja.
+    </p>
+  </div>
+
+  <div className="bg-white shadow-lg rounded-2xl p-6 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-pink-50">
+    <h3 className="text-xl font-semibold mb-2">Pre-Puja Shopping</h3>
+    <p>
+      Sarees, handicrafts & festive wear — shop everything you need
+      to make your Puja special.
+    </p>
+  </div>
+</div>
+<div className="py-4"></div>
+
+        <div className="bg-white border rounded-lg shadow-md p-4 flex flex-col items-center">
+          {/* Wrapper for hover + mobile text */}
+          <a
+            href="https://rzp.io/rzp/FcuyQeGb"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative group flex flex-col items-center"
+          >
+            {/* Banner Image */}
+            <img
+              src={Banner}
+              alt="Self Advertisement"
+              className="max-w-full max-h-[400px] object-contain rounded-lg shadow-md mb-2 transform transition-transform duration-300 group-hover:scale-110 cursor-pointer"
+            />
+
+            {/* Hover / Mobile Text */}
+            <span
+              className="
+        w-full text-center text-white text-sm md:text-base font-semibold rounded-md
+        bg-blue-600 py-2
+        opacity-100 md:opacity-0 md:group-hover:opacity-100
+        transition-opacity duration-300
+      "
+            >
+              Click on the banner to get the subscription
+            </span>
+          </a>
+
+          {/* Download Button */}
+          <a
+            href="/Payment_banner.png"
+            download="Payment_Banner.png"
+            className="mt-4 inline-block px-6 py-3 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white font-semibold rounded-lg shadow-md hover:from-yellow-600 hover:to-yellow-700 transition duration-300"
+          >
+            📥 Download Banner
+          </a>
         </div>
+
+
+
+
+
       </section>
+
+      {/* Collaboration Section */}
+      {/* <section id="collab" className="py-16 px-6 md:px-20 bg-white text-center">
+        <h2 className="text-3xl font-bold mb-4">Collaborate With Us</h2>
+        <p className="text-lg max-w-2xl mx-auto mb-6">
+          Be part of Tripura’s biggest Durga Puja digital celebration.
+          Showcase your brand to thousands of devotees & visitors.
+        </p>
+        <a
+          href="mailto:info@rjrinfinity.com"
+          className="px-6 py-3 bg-red-600 text-white rounded-full shadow-lg hover:bg-red-700 transition"
+        >
+          Become a Partner
+        </a>
+      </section> */}
+
+      {/* Side Ad */}
+      {/* <section className="py-6 px-6 md:px-20 bg-gray-100 text-center">
+        <div className="bg-white border rounded-lg shadow-md py-10">
+          <h2 className="text-xl font-bold mb-2">📢 Sponsor Highlight</h2>
+          <p className="text-gray-600">Feature your business here. Limited premium spots available.</p>
+        </div>
+      </section> */}
+
+      {/* Ad Space - Banner */}
+      {/* <section className="py-6 px-6 md:px-20 bg-gray-100 text-center">
+        <div className="bg-white border rounded-lg shadow-md py-10">
+          <h2 className="text-xl font-bold mb-2">🌟 Advertisement Space</h2>
+          <p className="text-gray-600">Your brand here. Reach thousands during Durga Puja.</p>
+        </div>
+      </section> */}
+
+      {/* Ad Space - Banner with Image */}
+      {/* <section className="py-6 px-6 md:px-20 bg-gray-100 text-center">
+        <div className="bg-white border rounded-lg shadow-md p-6 flex flex-col items-center">
+          <h2 className="text-xl font-bold mb-4">🌟 Sponsored Ad</h2>
+          <img
+            src={AdImage}
+            alt="Advertisement"
+            className="w-64 h-64 object-cover rounded-lg shadow-md mb-4"
+          />
+          <p className="text-gray-600">Your brand here. Reach thousands during Durga Puja.</p>
+        </div>
+      </section> */}
 
       {/* Contact Section */}
       <section className="py-16 px-6 md:px-20 bg-white text-center">
         <h2 className="text-3xl font-bold mb-6">Contact Us</h2>
         <p className="mb-8">
-          Reach out to us for collaboration, listings, or any inquiries.
+          For collaborations, sponsorships, or media partnerships — let’s connect.
         </p>
         <div className="flex justify-center gap-6 flex-wrap">
           <a href="mailto:info@rjrinfinity.com" className="flex items-center gap-2 text-blue-600 hover:underline">
@@ -97,35 +230,6 @@ export default function HomePage() {
           </a>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="py-8 bg-gray-900 text-white text-center">
-        <p>
-          An initiative inspired by{" "}
-          <a
-            href="https://rjrinfinity.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-semibold text-blue-400 hover:underline"
-          >
-            Mr. Arindam Chakraborty (Founder - R J R Infinity)
-          </a>
-          , proudly from Tripura — keeping the spirit of Durga Puja alive everywhere.
-        </p>
-        <p className="mt-2 text-sm text-gray-400">
-          © 2025{" "}
-          <a
-            href="https://rjrinfinity.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:underline"
-          >
-            R J R Infinity
-          </a>
-          . All rights reserved.
-        </p>
-      </footer>
-
     </div>
   );
 }
