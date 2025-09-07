@@ -68,8 +68,19 @@ export default function ContactUs() {
         ☎ Phone:{" "}
         <a href="tel:+919830410335" className="text-blue-500 underline">
           +91-9830410335
-        </a>
+        </a>,
       </p>
+<p className="mb-2">
+  💬 WhatsApp:{" "}
+  <a
+    href="https://wa.me/917308656861"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-green-500 underline"
+  >
+    +91-7308656861
+  </a>
+</p>
       <p className="mb-2">
         🌐 Website:{" "}
         <a
