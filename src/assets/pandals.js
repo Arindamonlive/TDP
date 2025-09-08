@@ -113,15 +113,18 @@ export const pandals = {
   westTripura: [
     {
       id: 1,
-      name: "Agartala Durga Bari",
-      description: "Most famous pandal in Agartala",
-      heroImage: "/src/assets/Background.png",
-      helpline: "1800-999-000",
-      inspiration: "Oldest traditional pandal in Tripura",
-      address: "Durga Bari Road, Agartala, West Tripura",
-      direction: "https://maps.google.com/?q=Agartala+Durga+Bari",
-      featureImages: ["/src/assets/Background.png"],
-      nearbyFood: [{ name: "Agartala Sweets", pin: "799001" }],
+      name: "Bharat Ratna Shangha",
+      description: "Famous central pandal",
+      heroImage: "/src/assets/pandals/west tripura/id_1 (1).jpeg",
+      helpline: "1800-111-222",
+      inspiration: "This year theme is Asias tallest Shiva temple, that’s Jatoli Shiva temple",
+      address: "Ushabazar, Airport road Agartala Tripura(w), Pin:-799009",
+      direction: "https://maps.app.goo.gl/bzFstyv9SB9eevNy8",
+      featureImages: ["/src/assets/pandals/west tripura/id_1 (2).jpeg", "/src/assets/pandals/west tripura/id_1 (3).jpeg","/src/assets/pandals/west tripura/id_1 (4).jpeg","/src/assets/pandals/west tripura/id_1 (5).jpeg","/src/assets/pandals/west tripura/id_1 (6).jpeg"],
+      nearbyFood: [
+        { name: "", pin: "" },
+        { name: "", pin: "" },
+      ],
     },
     {
       id: 2,
