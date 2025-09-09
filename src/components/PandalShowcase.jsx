@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { pandals } from "../data/pandals";
-import { foodPlaces } from "../data/food"; // separate dataset for food
+import { foodPlaces } from "../data/food"; 
 import { motion } from "framer-motion";
 
 export default function PandalShowcase() {
