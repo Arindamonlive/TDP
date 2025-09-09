@@ -6,7 +6,7 @@ import React, { useState, useEffect } from "react";
 import AdImage1 from "../assets/banner/elc.jpeg";
 import AdImage2 from "../assets/banner/joy1.jpeg";
 import AdImage3 from "../assets/banner/joy2.jpeg";
-import AdImage4 from "../assets/banner/LOngtorai.jpg"
+import AdImage4 from "../assets/banner/Longtorai.jpg"
 import Banner from "../assets/Payment_banner.png";
 const adImages = [AdImage1, AdImage2, AdImage3, AdImage4];
 
