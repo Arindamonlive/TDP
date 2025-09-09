@@ -115,15 +115,14 @@ export const pandals = {
       id: 1,
       name: "Bharat Ratna Shangha",
       description: "Famous central pandal",
-      heroImage: "/pandal/westtripura/id_1(1).png",
+      heroImage: "/pandal/westtripura/id_1_1.png",
       helpline: "",
       inspiration: "This year theme is Asia's tallest Shiva temple, that’s Jatoli Shiva temple",
       address: "Ushabazar, Airport Road Agartala Tripura(w), Pin:-799009",
       direction: "https://maps.app.goo.gl/bzFstyv9SB9eevNy8",
-      featureImages: ["/pandal/westtripura/id_1(2).jpeg", "/pandal/westtripura/id_1(3).jpeg","/pandal/westtripura/id_1(4).jpeg","/pandal/westtripura/id_1(5).jpeg","/pandal/westtripura/id_1(6).jpeg"],
+      featureImages: ["/pandal/westtripura/id_1_2.jpeg", "/pandal/westtripura/id_1_3.jpeg","/pandal/westtripura/id_1_4.jpeg","/pandal/westtripura/id_1_5.jpeg","/pandal/westtripura/id_1_6.jpeg"],
       nearbyFood: [
-        { name: "", pin: "" },
-        { name: "", pin: "" },
+        { name: "Hotel Grand Zuri", pin: "799009" },
       ],
     },
     {

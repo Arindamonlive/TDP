@@ -1,10 +1,13 @@
 import { useParams } from "react-router-dom";
 import { pandals } from "../data/pandals";
 import { foodPlaces } from "../data/food"; 
+import { motion } from "framer-motion";
 
+                                                                                            
 
 export default function PandalShowcase() {
   const { districtName, pandalId } = useParams();
+
   const pandal = (pandals[districtName] || []).find(
     (p) => p.id.toString() === pandalId
   );
@@ -20,7 +23,7 @@ export default function PandalShowcase() {
     <div className="p-6">
       {/* Hero Image */}
       <motion.img
-        src={pandal.heroImage}
+        src={pandal.heroImage || pandal.featureImages[0]}
         alt={pandal.name}
         className="w-full h-72 object-cover rounded-lg shadow-lg"
         initial={{ opacity: 0 }}

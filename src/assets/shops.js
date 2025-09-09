@@ -4,7 +4,7 @@ export const shops = {
     {
       id: 1,
       name: "Ambassa Bazar",
-      heroImage: "/src/assets/shop1.jpg",
+      heroImage: "/src/assets/Background.png",
       helpline: "1800-555-666",
       description: "Traditional clothing & accessories market.",
       address: "Ambassa Bazaar, Dhalai",
@@ -17,7 +17,7 @@ export const shops = {
     {
       id: 2,
       name: "Dhalai Electronics Market",
-      heroImage: "/src/assets/shop5.jpg",
+      heroImage: "/src/assets/Background.png",
       helpline: "1800-555-777",
       description: "Electronics and gadgets.",
       address: "Main Street, Dhalai",
@@ -33,7 +33,7 @@ export const shops = {
     {
       id: 1,
       name: "Udaipur Shopping Complex",
-      heroImage: "/src/assets/shop3.jpg",
+      heroImage: "/src/assets/Background.png",
       helpline: "1800-777-888",
       description: "Popular shopping hub in Udaipur.",
       address: "Udaipur Town, Gomati",
@@ -46,7 +46,7 @@ export const shops = {
     {
       id: 2,
       name: "Gomati Handicrafts",
-      heroImage: "/src/assets/shop7.jpg",
+      heroImage: "/src/assets/Background.png",
       helpline: "1800-777-999",
       description: "Traditional handicrafts and souvenirs.",
       address: "Market Road, Gomati",
@@ -62,7 +62,7 @@ export const shops = {
     {
       id: 1,
       name: "Belonia Market",
-      heroImage: "/src/assets/shop9.jpg",
+      heroImage: "/src/assets/Background.png",
       helpline: "1800-888-111",
       description: "Clothing and grocery stores.",
       address: "Belonia Town, South Tripura",
@@ -78,7 +78,7 @@ export const shops = {
     {
       id: 1,
       name: "Dharmanagar Central Market",
-      heroImage: "/src/assets/shop11.jpg",
+      heroImage: "/src/assets/Background.png",
       helpline: "1800-999-111",
       description: "Main market of North Tripura.",
       address: "Dharmanagar Town, North Tripura",
@@ -94,7 +94,7 @@ export const shops = {
     {
       id: 1,
       name: "Agartala Central Market",
-      heroImage: "/src/assets/shop13.jpg",
+      heroImage: "/src/assets/Background.png",
       helpline: "1800-111-222",
       description: "Largest market in Agartala.",
       address: "Agartala, West Tripura",
@@ -110,7 +110,7 @@ export const shops = {
     {
       id: 1,
       name: "Khowai Bazaar",
-      heroImage: "/src/assets/shop15.jpg",
+      heroImage: "/src/assets/Background.png",
       helpline: "1800-222-333",
       description: "Central shopping hub for Khowai.",
       address: "Khowai Town, Khowai",
@@ -126,7 +126,7 @@ export const shops = {
     {
       id: 1,
       name: "Kailashahar Market",
-      heroImage: "/src/assets/shop17.jpg",
+      heroImage: "/src/assets/Background.png",
       helpline: "1800-333-444",
       description: "Famous market in Unakoti district.",
       address: "Kailashahar Town, Unakoti",
@@ -142,7 +142,7 @@ export const shops = {
     {
       id: 1,
       name: "Bishalgarh Market",
-      heroImage: "/src/assets/shop19.jpg",
+      heroImage: "/src/assets/Background.png",
       helpline: "1800-444-555",
       description: "Well-known local market of Sepahijala.",
       address: "Bishalgarh Town, Sepahijala",

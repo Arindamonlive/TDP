@@ -15,7 +15,7 @@ const districtNames = {
 
 export default function FoodList() {
   const { district } = useParams();
-  const districtKey = district; // this is 'southTripura', 'dhalai', etc.
+  const districtKey = district;
   const districtFoods = foodPlaces[districtKey] || [];
 
   return (
@@ -32,13 +32,13 @@ export default function FoodList() {
             className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition"
           >
             <img
-              src={food.heroImage}
+              src={food.heroImage || "/placeholder.png"} // fallback if image missing
               alt={food.name}
               className="w-full h-48 object-cover"
             />
             <div className="p-4">
               <h2 className="text-xl font-semibold">{food.name}</h2>
-              <p className="text-gray-600">{food.description}</p>
+              <p className="text-gray-600">{food.description || "No description available."}</p>
             </div>
           </Link>
         ))}

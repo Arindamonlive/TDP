@@ -4,7 +4,7 @@ export const foodPlaces = {
     {
       id: 1,
       name: "Ambassa Restaurant",
-      heroImage: "/src/assets/food1.jpg",
+      heroImage: "/src/assets/Background.png",
       helpline: "1800-111-222",
       description: "Famous for traditional Bengali thali.",
       address: "Ambassa Main Road, Dhalai",
@@ -20,7 +20,7 @@ export const foodPlaces = {
     {
       id: 1,
       name: "Udaipur Bhojanalay",
-      heroImage: "/src/assets/food3.jpg",
+      heroImage: "/src/assets/Background.png",
       helpline: "1800-333-444",
       description: "Popular place for sweets & snacks.",
       address: "Udaipur Market, Gomati",
@@ -36,7 +36,7 @@ export const foodPlaces = {
     {
       id: 1,
       name: "Belonia Food Court",
-      heroImage: "/src/assets/food5.jpg",
+      heroImage: "/src/assets/Background.png",
       helpline: "1800-555-666",
       description: "Famous for fast food and snacks.",
       address: "Belonia Main Road, South Tripura",
@@ -52,7 +52,7 @@ export const foodPlaces = {
     {
       id: 1,
       name: "Dharmanagar Sweets",
-      heroImage: "/src/assets/food7.jpg",
+      heroImage: "/src/assets/Background.png",
       helpline: "1800-666-777",
       description: "Famous for traditional sweets and snacks.",
       address: "Dharmanagar Town, North Tripura",
@@ -65,10 +65,23 @@ export const foodPlaces = {
   ],
 
   westTripura: [
-    {
+        {
       id: 1,
+      name: "Hotel Grand Zuri",
+      heroImage: "/food/westtripura/id_1_2.jpeg",
+      helpline: "+91-8731994448",
+      description: "Multi-cuisine restaurant.",
+      address: "Agartala Airport Rd, VIP Road, Usha Bazar, Agartala, Tripura 799009",
+      direction: "https://maps.app.goo.gl/2Lt3bjwjMNp7E7cGA",
+      featureImages: ["/food/westtripura/id_1_1.jpeg", "/food/westtripura/id_1_2.jpeg","/food/westtripura/id_1_3.jpeg","/food/westtripura/id_1_4.jpeg"],
+      openingHours: "10:00 AM - 10:00 PM",
+      category: "Multi-cuisine",
+      rating: 4.5,
+    },
+    {
+      id: 2,
       name: "Agartala Food Plaza",
-      heroImage: "/src/assets/food9.jpg",
+      heroImage: "/src/assets/Background.png",
       helpline: "1800-777-888",
       description: "Multi-cuisine restaurant with local flavors.",
       address: "Agartala City, West Tripura",
@@ -84,7 +97,7 @@ export const foodPlaces = {
     {
       id: 1,
       name: "Khowai Tandoor",
-      heroImage: "/src/assets/food11.jpg",
+      heroImage: "/src/assets/Background.png",
       helpline: "1800-888-999",
       description: "Famous for tandoori dishes and snacks.",
       address: "Khowai Town, Khowai",
@@ -100,7 +113,7 @@ export const foodPlaces = {
     {
       id: 1,
       name: "Kailashahar Bhojanalay",
-      heroImage: "/src/assets/food13.jpg",
+      heroImage: "/src/assets/Background.png",
       helpline: "1800-999-111",
       description: "Traditional Tripuri dishes and snacks.",
       address: "Kailashahar Town, Unakoti",
@@ -116,7 +129,7 @@ export const foodPlaces = {
     {
       id: 1,
       name: "Bishalgarh Food Hub",
-      heroImage: "/src/assets/food15.jpg",
+      heroImage: "/src/assets/Background.png",
       helpline: "1800-111-333",
       description: "Local snacks and beverages.",
       address: "Bishalgarh Town, Sepahijala",

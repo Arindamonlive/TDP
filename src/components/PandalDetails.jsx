@@ -18,7 +18,6 @@ export default function PandalDetail() {
   const pandal = pandals[district]?.find((p) => p.id === parseInt(id));
 
   if (!pandal) return <p className="text-center mt-10">Pandal not found</p>;
-
   return (
     <div className="p-6">
       {/* Hero Image */}

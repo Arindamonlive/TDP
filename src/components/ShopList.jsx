@@ -13,32 +13,32 @@ const districtNames = {
   sepahijala: "সিপাহিজালা (Sepahijala)",
 };
 
-export default function FoodList() {
+export default function ShopList() {
   const { district } = useParams();
-  const districtKey = district; // this is 'southTripura', 'dhalai', etc.
-  const districtFoods = shops[districtKey] || [];
+  const districtKey = district; // e.g., 'westTripura'
+  const districtShops = shops[districtKey] || [];
 
   return (
     <div className="p-6">
       <h1 className="text-3xl font-bold mb-6">
-        কোথায় খাবেন (Where to Eat) — {districtNames[districtKey] || districtKey}
+        দোকানসমূহ (Shops) — {districtNames[districtKey] || districtKey}
       </h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {districtFoods.map((shops) => (
+        {districtShops.map((shop) => (
           <Link
-            key={shops.id}
-            to={`/shops/${districtKey}/${shops.id}`}
+            key={shop.id}
+            to={`/shops/${districtKey}/${shop.id}`}
             className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition"
           >
             <img
-              src={shops.heroImage}
-              alt={shops.name}
+              src={shop.heroImage || "/placeholder.png"} // fallback if missing
+              alt={shop.name}
               className="w-full h-48 object-cover"
             />
             <div className="p-4">
-              <h2 className="text-xl font-semibold">{shops.name}</h2>
-              <p className="text-gray-600">{shops.description}</p>
+              <h2 className="text-xl font-semibold">{shop.name}</h2>
+              <p className="text-gray-600">{shop.description || "No description available."}</p>
             </div>
           </Link>
         ))}

@@ -16,12 +16,15 @@ export default function DistrictList() {
             key={pandal.id}
             className="relative bg-white shadow-lg rounded-lg overflow-hidden group"
           >
-            <img src={pandal.image} alt={pandal.name} className="w-full h-40 object-cover" />
+            <img
+              src={pandal.heroImage}  // <-- fixed
+              alt={pandal.name}
+              className="w-full h-40 object-cover"
+            />
             <div className="p-4">
               <h3 className="text-lg font-semibold">{pandal.name}</h3>
               <p className="text-sm text-gray-600">{pandal.description}</p>
             </div>
-            {/* hover effect */}
             <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
               <span className="text-white text-lg">View Details</span>
             </div>
