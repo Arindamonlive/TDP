@@ -1,14 +1,24 @@
 import { Mail, Phone, Facebook, MessageCircle } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Background from "../assets/Background.png";
 import Logo from "../assets/Logo-removebg.png";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import AdImage1 from "../assets/banner/elc.jpeg";
 import AdImage2 from "../assets/banner/joy1.jpeg";
 import AdImage3 from "../assets/banner/joy2.jpeg";
+import AdImage4 from "../assets/banner/LOngtorai.jpg"
 import Banner from "../assets/Payment_banner.png";
+const adImages = [AdImage1, AdImage2, AdImage3, AdImage4];
 
 export default function HomePage() {
+    const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % adImages.length);
+    }, 4000); // slide every 4 seconds
+    return () => clearInterval(interval);
+  }, []);
   return (
     <div className="font-sans text-gray-800">
       {/* Hero Section */}
@@ -55,36 +65,37 @@ export default function HomePage() {
         </div>
       </section> */}
 
-      <section className="py-6 px-6 md:px-20 bg-gray-100 text-center">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Ad 1 */}
-          <div className="group bg-white border rounded-lg shadow-md p-4 flex flex-col items-center transform transition-transform duration-300 hover:scale-105">
-            <img
-              src={AdImage1}
-              alt="Advertisement 1"
-              className="max-w-full max-h-[400px] object-contain rounded-lg shadow-md mb-2"
-            />
-          </div>
 
-          {/* Ad 2 */}
-          <div className="group bg-white border rounded-lg shadow-md p-4 flex flex-col items-center transform transition-transform duration-300 hover:scale-105">
-            <img
-              src={AdImage2}
-              alt="Advertisement 2"
-              className="max-w-full max-h-[400px] object-contain rounded-lg shadow-md mb-2"
-            />
-          </div>
+{/* Banner new */}
+    <section className="py-6 px-6 md:px-20 bg-gray-100 text-center">
+      <div className="relative w-full h-[400px] overflow-hidden rounded-lg shadow-lg">
+        <AnimatePresence>
+          <motion.img
+            key={current}
+            src={adImages[current]}
+            alt={`Advertisement ${current + 1}`}
+            className="absolute w-full h-full object-contain mx-auto my-auto"
+            style={{ top: 0, bottom: 0, left: 0, right: 0, margin: "auto" }}
+            initial={{ scale: 1.2, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0.8, opacity: 0 }}
+            transition={{ duration: 1 }}
+          />
+        </AnimatePresence>
+      </div>
 
-          {/* Ad 3 */}
-          <div className="group bg-white border rounded-lg shadow-md p-4 flex flex-col items-center transform transition-transform duration-300 hover:scale-105">
-            <img
-              src={AdImage3}
-              alt="Advertisement 3"
-              className="max-w-full max-h-[400px] object-contain rounded-lg shadow-md mb-2"
-            />
-          </div>
-        </div>
-      </section>
+      {/* Dots */}
+      <div className="flex justify-center gap-2 mt-4">
+        {adImages.map((_, idx) => (
+          <div
+            key={idx}
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+              idx === current ? "bg-blue-600 scale-125" : "bg-gray-400"
+            }`}
+          ></div>
+        ))}
+      </div>
+    </section>
 
 
 
