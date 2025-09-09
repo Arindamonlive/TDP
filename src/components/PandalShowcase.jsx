@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { pandals } from "../data/pandals";
 import { foodPlaces } from "../data/food"; 
-import { motion } from "framer-motion";
+
 
 export default function PandalShowcase() {
   const { districtName, pandalId } = useParams();
