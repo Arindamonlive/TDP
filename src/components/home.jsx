@@ -58,12 +58,39 @@ export default function HomePage() {
       </div>
 
       {/* Ad Space - Banner */}
-      {/* <section className="py-6 px-6 md:px-20 bg-gray-100 text-center">
-        <div className="bg-white border rounded-lg shadow-md py-10">
-          <h2 className="text-xl font-bold mb-2">🌟 Advertisement Space</h2>
-          <p className="text-gray-600">Your brand here. Reach thousands during Durga Puja.</p>
-        </div>
-      </section> */}
+<section className="py-6 px-6 md:px-20 bg-gray-100 text-center">
+  <div className="bg-white border rounded-lg shadow-md py-10">
+    <h2 className="text-2xl font-bold mb-2">🌟 Contact Us</h2>
+    <div className="flex flex-col md:flex-row justify-center gap-4 text-lg">
+      {/* Call links */}
+      <a href="tel:+919830410335" className="text-blue-600 hover:underline">
+        📞 +91-9830410335
+      </a>
+      {/* <a href="tel:+917308656861" className="text-blue-600 hover:underline">
+        📞 +91-7308656861
+      </a> */}
+
+      {/* WhatsApp links */}
+      <a
+        href="https://wa.me/919830410335"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-green-600 hover:underline"
+      >
+        💬 WhatsApp (9830410335)
+      </a>
+      <a
+        href="https://wa.me/917308656861"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-green-600 hover:underline"
+      >
+        💬 WhatsApp (7308656861)
+      </a>
+    </div>
+  </div>
+</section>
+
 
 
 {/* Banner new */}
