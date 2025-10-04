@@ -90,7 +90,25 @@ export default function HomePage() {
     </div>
   </div>
 </section>
-
+{/* Traffic Advisory Section */}
+<section className="py-16 px-6 md:px-20 bg-red-50 text-center">
+  <h2 className="text-3xl font-bold mb-8">🚦 Traffic Advisory & Alternative Routes</h2>
+  <div className="grid md:grid-cols-2 gap-8">
+    <img
+      src="/traffic2025/agttrafficadvice2025.jpeg"
+      alt="Traffic Advisory"
+      className="w-full h-auto rounded-lg shadow-md"
+    />
+    <img
+      src="/traffic2025/agttrafficadvisorry2025.jpeg"
+      alt="Alternative Routes"
+      className="w-full h-auto rounded-lg shadow-md"
+    />
+  </div>
+  <p className="mt-6 text-gray-700 text-lg">
+    Follow these advisories for smooth travel during Durga Puja 2025.  
+  </p>
+</section>
 
 
 {/* Banner new */}
