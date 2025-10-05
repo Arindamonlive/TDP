@@ -175,13 +175,39 @@ const handleDownloadPDF = (type) => {
 <section className="py-12 px-6 md:px-20 bg-white text-center">
   <h3 className="text-2xl font-bold mb-4">Lakshmi Puja 2025 Details</h3>
   <p className="text-lg text-gray-700">
-    🗓️ Date: 13 October 2025 (Monday)  
+    🗓️ Date: 6th October 2025 (Monday)  
     🌕 Day of Kojagori Purnima  
   </p>
   <p className="mt-4 text-gray-600">
     🌸 এই দিনে দেবী লক্ষ্মীর পূজা করা হয় ঘরে ঘরে, ধন ও সমৃদ্ধির জন্য।  
     🌸 Goddess Lakshmi is worshipped on this full moon night for wealth and prosperity.
   </p>
+<div className="bg-white shadow-md rounded-xl p-6 text-center leading-relaxed">
+  <h3 className="text-2xl font-bold text-pink-700 mb-4">
+    🕯️ ২০২৫ সালের কোজাগরী লক্ষীপূজার সময়সূচী  
+  </h3>
+
+  <p className="text-gray-800 whitespace-pre-line text-lg">
+    পূর্ণিমা শুরু: <strong>৬ অক্টোবর ২০২৫</strong>, সকাল <strong>১১:২৪ মিনিট</strong> থেকে।{'\n'}
+    পূর্ণিমা তিথি শেষ: <strong>৭ অক্টোবর ২০২৫</strong>, সকাল <strong>৯:৩৩ মিনিট</strong> পর্যন্ত।{'\n'}
+    পূজার শুভ সময়: <strong>৬ অক্টোবর</strong>, সন্ধ্যা <strong>৬:৪৫</strong> থেকে রাত <strong>১১:০০</strong> পর্যন্ত।{'\n'}
+    নিশীথ কাল (শুভ মুহূর্ত): রাত <strong>১১:৪৫</strong> থেকে <strong>১২:৩৪</strong> পর্যন্ত।
+  </p>
+
+  <hr className="my-6 border-gray-300" />
+
+  <h3 className="text-xl font-semibold text-blue-700 mb-2">
+    🌕 Kojagori Lakshmi Puja 2025 Timings
+  </h3>
+
+  <p className="text-gray-700 text-base">
+    <strong>Purnima begins:</strong> October 6, 2025 — 11:24 AM<br />
+    <strong>Purnima Tithi ends:</strong> October 7, 2025 — 9:33 AM<br />
+    <strong>Auspicious time for Puja:</strong> October 6, 6:45 PM – 11:00 PM<br />
+    <strong>Nishit Kaal (Auspicious Moment):</strong> 11:45 PM – 12:34 AM
+  </p>
+</div>
+
 </section>
 {/* Puja Rules & Pachali Section */}
 <section className="py-16 px-6 md:px-20 bg-yellow-50 text-center">
