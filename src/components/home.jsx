@@ -8,6 +8,11 @@ import AdImage2 from "../assets/banner/joy1.jpeg";
 import AdImage3 from "../assets/banner/joy2.jpeg";
 import AdImage4 from "../assets/banner/Longtorai.jpg"
 import Banner from "../assets/Payment_banner.png";
+import {pujaRules} from "../assets/laxmi/laxmirule.js";
+import {pachali} from "../assets/laxmi/pachali.js";
+import laxmi from "../assets/laxmi/laxmipuja202k5.png"
+import jsPDF from "jspdf";
+
 const adImages = [AdImage1, AdImage2, AdImage3, AdImage4];
 
 export default function HomePage() {
@@ -19,6 +24,45 @@ export default function HomePage() {
     }, 4000); // slide every 4 seconds
     return () => clearInterval(interval);
   }, []);
+
+const [openPopup, setOpenPopup] = useState(null);
+
+const handleDownloadPDF = (type) => {
+  const doc = new jsPDF();
+  doc.setFont("helvetica", "normal");
+  doc.setFontSize(14);
+
+  if (type === "rules") {
+    doc.text("কোজাগরী লক্ষ্মী পূজা বিধি", 10, 10);
+    let y = 20;
+    pujaRules.forEach((line) => {
+      const lines = doc.splitTextToSize(line, 180);
+      doc.text(lines, 10, y);
+      y += lines.length * 8;
+      if (y > 270) { doc.addPage(); y = 20; }
+    });
+    doc.save("Lakshmi_Puja_Rules.pdf");
+  } else {
+    doc.text(pachali.title, 10, 10);
+    let y = 20;
+    pachali.sections.forEach((sec) => {
+      doc.setFontSize(13);
+      doc.text(sec.heading, 10, y);
+      y += 8;
+      doc.setFontSize(12);
+      sec.stanzas.forEach((stanza) => {
+        const lines = doc.splitTextToSize(stanza, 180);
+        doc.text(lines, 10, y);
+        y += lines.length * 7;
+        if (y > 270) { doc.addPage(); y = 20; }
+      });
+      y += 5;
+    });
+    doc.save("Lakshmi_Pachali.pdf");
+  }
+};
+
+
   return (
     <div className="font-sans text-gray-800">
       {/* Hero Section */}
@@ -90,8 +134,11 @@ export default function HomePage() {
     </div>
   </div>
 </section>
-{/* Traffic Advisory Section */}
-<section className="py-16 px-6 md:px-20 bg-red-50 text-center">
+
+
+{/* Traffic Advisory Section start */}
+
+{/* <section className="py-16 px-6 md:px-20 bg-red-50 text-center">
   <h2 className="text-3xl font-bold mb-8">🚦 Traffic Advisory & Alternative Routes</h2>
   <div className="grid md:grid-cols-2 gap-8">
     <img
@@ -108,7 +155,118 @@ export default function HomePage() {
   <p className="mt-6 text-gray-700 text-lg">
     Follow these advisories for smooth travel during Durga Puja 2025.  
   </p>
+</section> */}
+
+{/* Traffic Advisory Section end */}
+
+
+{/*Laxmi Puja start */}
+<section className="py-10 bg-yellow-50 text-center">
+  <img
+    src={laxmi}
+    alt="Kojagori Lakshmi Puja 2025"
+    className="mx-auto w-full max-w-md rounded-lg shadow-lg"
+  />
+  <h2 className="text-3xl font-bold mt-6 text-pink-700">
+    শুভ কোজাগরী লক্ষ্মী পূজা | Happy Kojagori Lakshmi Puja 🌕
+  </h2>
 </section>
+
+<section className="py-12 px-6 md:px-20 bg-white text-center">
+  <h3 className="text-2xl font-bold mb-4">Lakshmi Puja 2025 Details</h3>
+  <p className="text-lg text-gray-700">
+    🗓️ Date: 13 October 2025 (Monday)  
+    🌕 Day of Kojagori Purnima  
+  </p>
+  <p className="mt-4 text-gray-600">
+    🌸 এই দিনে দেবী লক্ষ্মীর পূজা করা হয় ঘরে ঘরে, ধন ও সমৃদ্ধির জন্য।  
+    🌸 Goddess Lakshmi is worshipped on this full moon night for wealth and prosperity.
+  </p>
+</section>
+{/* Puja Rules & Pachali Section */}
+<section className="py-16 px-6 md:px-20 bg-yellow-50 text-center">
+  <h2 className="text-3xl font-bold mb-10 text-pink-700">
+    📜 পূজা বিধি ও পাছোলী
+  </h2>
+
+  <div className="grid md:grid-cols-2 gap-8">
+    <div
+      onClick={() => setOpenPopup("rules")}
+      className="bg-white shadow-lg rounded-2xl p-6 cursor-pointer hover:shadow-2xl hover:bg-pink-50 transition-all duration-300"
+    >
+      <h3 className="text-xl font-semibold mb-2">🌸 পূজা বিধি</h3>
+      <p>ক্লিক করুন — লক্ষ্মী পূজার নিয়মাবলী পড়তে</p>
+    </div>
+
+    <div
+      onClick={() => setOpenPopup("pachali")}
+      className="bg-white shadow-lg rounded-2xl p-6 cursor-pointer hover:shadow-2xl hover:bg-yellow-50 transition-all duration-300"
+    >
+      <h3 className="text-xl font-semibold mb-2">🪔 পাছোলী</h3>
+      <p>ক্লিক করুন — কোজাগরী লক্ষ্মীর পাছোলী পড়তে</p>
+    </div>
+  </div>
+
+  {/* Popup */}
+  <AnimatePresence>
+    {openPopup && (
+      <motion.div
+        className="fixed inset-0 bg-black/70 flex justify-center items-center z-50 p-4"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+      >
+        <div className="bg-white rounded-2xl p-6 max-w-3xl w-full relative overflow-y-auto max-h-[85vh]">
+          <button
+            onClick={() => setOpenPopup(null)}
+            className="absolute top-2 right-4 text-gray-500 text-2xl font-bold"
+          >
+            ✕
+          </button>
+          <h3 className="text-2xl font-bold mb-4 text-center text-pink-700">
+            {openPopup === "rules" ? "🌸 পূজা বিধি" : "🪔 পাছোলী"}
+          </h3>
+
+          <div className="text-left whitespace-pre-line text-gray-700 leading-relaxed">
+            {openPopup === "rules" ? (
+              <div>
+                {pujaRules.map((line, i) => (
+                  <p key={i} className="mb-2">{line}</p>
+                ))}
+              </div>
+            ) : (
+              <div>
+                {pachali.sections.map((section, idx) => (
+                  <div key={idx} className="mb-4">
+                    <h4 className="font-semibold text-lg text-pink-600 mb-2">
+                      {section.heading}
+                    </h4>
+                    {section.stanzas.map((st, i) => (
+                      <p key={i} className="mb-1">{st}</p>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+
+          <div className="text-center mt-6">
+            <button
+              onClick={() => handleDownloadPDF(openPopup)}
+              className="px-6 py-2 bg-pink-600 text-white rounded-lg hover:bg-pink-700 transition"
+            >
+              📥 পিডিএফ ডাউনলোড করুন
+            </button>
+          </div>
+        </div>
+      </motion.div>
+    )}
+  </AnimatePresence>
+</section>
+
+{/*Laxmi Puja end */}
+
+
 
 
 {/* Banner new */}
