@@ -18,6 +18,7 @@ import FoodList from "./components/FoodList";
 // Shops
 import ShopDetails from "./components/ShopDetail";
 import ShopList from "./components/ShopList";
+import RazorpayPaymentTest from "./components/payment";
 
 function App() {
   const [introDone, setIntroDone] = useState(false);
@@ -49,6 +50,7 @@ function App() {
               <Route path="/shops/:district" element={<ShopList />} />
               <Route path="/shops/:district/:id" element={<ShopDetails />} />
               <Route path="/contact" element={<Contact/>}/>
+              <Route path="/payment" element={<RazorpayPaymentTest />} />
             </Routes>
 
             <Footer />
